@@ -1,0 +1,111 @@
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px); /* account for header height */
+  padding: 20px;
+  background: linear-gradient(135deg, #FAFAFA 0%, #FFEFE8 100%);
+}
+
+.login-card {
+  background-color: #fff;
+  padding: 40px 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+.login-card h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 28px;
+  color: #EE6F57;
+  font-weight: 700;
+}
+
+.login-card .subtitle {
+  text-align: center;
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.login-card input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #E3E3E3;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.login-card input:focus {
+  border-color: #EE6F57;
+}
+
+.login-card button {
+  background-color: #EE6F57;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.login-card button:hover {
+  background-color: #CB3737;
+  transform: translateY(-2px);
+}
+
+.login-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.login-links a {
+  color: #EE6F57;
+  text-decoration: none;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media(max-width: 480px){
+  .login-card {
+    padding: 32px 24px;
+    gap: 16px;
+  }
+
+  .login-card h2 {
+    font-size: 24px;
+  }
+
+  .login-card .subtitle {
+    font-size: 14px;
+  }
+
+  .login-card input, .login-card button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
